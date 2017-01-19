@@ -1,31 +1,15 @@
-# Introducing slap: Simple Library for Automating Publishing
+# Introducing slap: Simple Library for Automated Publishing
 
 We had a client recently who wanted to automate publication of some map services in ArcGIS (for) Server via a scheduled task.
 
-## Prep Work
+## Setting up the Environment
 
-Depending on how your system is set up, there are a couple of task that may need to be done first; the local Python installation must be in the system `PATH` so that it can be run from a command prompt, and the default package manager, pip, must be available.  If these are already done on your system, you can proceed with [Installing slap](#Installing slap).
+Typically you'll run slap from an ArcGIS server instance; depending on how your system is set up, there are a couple of task that may need to be done first:
 
-### Adding Python to your PATH
-By default, Python is not added to your system `PATH` when you install ArcGIS; since we'll be running things from a command prompt, we need to make sure that Python is available.  A quick check is to open your prompt ("cmd" in the windows search bar), and simply enter `python`.  You should see something like this:
+* The local Python installation must be in the system `PATH` so that it can be run from a command prompt
+* The default Python package manager (pip) must be available
 
-```
-ifirkin@D7510-1613 c:\develop
-> python
-Python 2.7.8 (default, Jun 30 2014, 16:03:49) [MSC v.1500 32 bit (Intel)] on win32
-Type "help", "copyright", "credits" or "license" for more information.
->>>
-```
-
-### Installing pip
-[pip](https://pip.pypa.io/en/stable/) is python's default package manager, similar to npm, nuget, or chocolatey.  If you're running ArcGIS 10.4 or above, it's already installed on your system.  For previous versions, you'll need to download the [installation script](https://bootstrap.pypa.io/get-pip.py) and run: 
-
-```
-python get-pip.py
-```
-
-### Installing slap
-Once our Python environment is set up properly, installing slap is easy; just do:
+If you're not sure how to set these things up, see [Setting up a new Python environment with ArcGIS](link).  Once your Python environment is set up properly, installing slap is easy; just do:
 
 ```
 pip install slap
@@ -64,7 +48,7 @@ For more configuration examples, see the slap [documentation](https://github.com
 
 ## Publishing Services
 
-Once the config file is set up, you can publish the new services by doing
+Once the config file is set up, you can publish the new services by doing:
 
 ```
 slap publish --username <publisher username> --password <publisher password>
