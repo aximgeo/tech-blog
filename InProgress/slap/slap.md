@@ -10,7 +10,7 @@ For the purposes of this example, assume we have the following setup:
 
 ## Setting up the Environment
 
-Typically you'll run slap from your ArcGIS server; depending on how your system is set up, there are a couple of task that may need to be done first:
+Typically you'll run slap from your ArcGIS server; depending on how your system is set up, there are a couple of tasks that may need to be done first:
 
 * The local Python installation must be in the system `PATH` so that it can be run from a command prompt
 * The default Python package manager (pip) must be available
@@ -44,7 +44,7 @@ You should see a new file in the directory, named `config.json`, with a list of 
 
 ```javascript
 {                                                   
-    "agsUrl": "https://myhost.myname.com:6443/arcgis/admin", 
+    "agsUrl": "https://myhost.mydomain.com:6443/arcgis/admin", 
     "mapServices": {                                
         "services": [                               
             {                                       
@@ -66,7 +66,7 @@ You can open the `config.json` file with any text editor, and make changes to th
 
 ```javascript
 {                                                   
-    "agsUrl": "https://myhost.myname.com:6443/arcgis/admin", 
+    "agsUrl": "https://myhost.mydomain.com:6443/arcgis/admin", 
     "mapServices": {                                
         "services": [                               
             {                                       
@@ -110,6 +110,7 @@ C:\maps\map3.mxd published successfully
 Navigating to our REST service endpoint, you should see:
 
 ![slap1](slap1.png)
+
 ![slap2](slap2.png)
 
 Note that slap will automatically overwrite any existing services; if you run the same command again, you can see this from the output:
