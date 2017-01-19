@@ -21,6 +21,17 @@ If you're not sure how to set these things up, see [Setting up a new Python envi
 pip install slap
 ```
 
+You should see output similar to:
+
+```shell
+Collecting slap
+  Downloading https://testpypi.python.org/packages/d7/f0/0c7b09f1478557e06cfb4df161bde790c9974ee56122127389a9704663be/slap-3.0.0.dev5-py2-none-any.whl
+Collecting requests (from slap)
+  Downloading https://testpypi.python.org/packages/6d/00/8ed1b6ea43b10bfe28d08e6af29fd6aa5d8dab5e45ead9394a6268a2d2ec/requests-2.5.4.1-py2.py3-none-any.whl (468kB)
+Installing collected packages: requests, slap
+Successfully installed requests-2.5.4.1 slap-3.0.0.dev5
+```
+
 ## Configuration 
 Slap uses a configuration file to determine where and how to publish map services; this configuration file is in standard [json](https://www.copterlabs.com/json-what-it-is-how-it-works-how-to-use-it/) format, and can be generated using slap itself.  To create the bare-bones configuration file that `slap` will use to publish services, open your command prompt and do:
 
