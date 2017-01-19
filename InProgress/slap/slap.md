@@ -77,11 +77,43 @@ You can open the `config.json` file with any text editor, and make changes to th
 For more configuration examples, see the slap [documentation](https://github.com/gisinc/slap#config-files).
 
 ## Publishing Services
-
 Once the config file is set up, you can publish the new services by doing:
 
-```
+
+```shell
 slap publish --username siteadmin --password argis
+```
+
+And you should see output like the following:
+
+```shell
+Publishing all...
+Publishing C:\maps\map1.mxd
+C:\maps\map1.mxd published successfully
+Publishing C:\maps\map2.mxd
+C:\maps\map2.mxd published successfully
+Publishing C:\maps\map3.mxd
+C:\maps\map3.mxd published successfully
+```
+
+Navigating to our REST service endpoint, you should see:
+
+[slap1](slap1.png)
+[slap2](slap2.png)
+
+Note that slap will automatically overwrite any existing services; if you run the same command again, you can see this from the output:
+
+```shell
+Publishing all...
+Publishing C:\maps\map1.mxd
+Deleting old service...
+C:\maps\map1.mxd published successfully
+Publishing C:\maps\map2.mxd
+Deleting old service...
+C:\maps\map2.mxd published successfully
+Publishing C:\maps\map3.mxd
+Deleting old service...
+C:\maps\map3.mxd published successfully
 ```
 
 
