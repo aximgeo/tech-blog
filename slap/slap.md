@@ -73,7 +73,7 @@ You can open the `config.json` file with any text editor, and make changes to th
         "services": [                               
             {                                       
                 "input": "C:\\maps\\map1.mxd",
-                "folder": "myMaps",
+                "folderName": "myMaps",
                 "serviceName": "myMapService"
             },                                      
             {                                       
