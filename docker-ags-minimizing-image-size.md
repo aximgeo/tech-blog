@@ -26,7 +26,7 @@ Since each command in the dockerfile will result in a separate commit to the ima
 * Download, extract, unzip, install and delete the tarball as a sincle docker `RUN` command
 
 ## Making the tarballs accessible
-Download the tarball(s) from [ESRI](https://my.esri.com/#/downloads), and stage them on a network share or a local directory.  Once you have the installers in place, spin up a webserver with the root in your starging directory.  An easy way to accomplish this is to use the build-in Python webserver:
+Download the tarball(s) from [ESRI](https://my.esri.com/#/downloads), and stage them on a network share or a local directory.  Once you have the installers in place, spin up a webserver with the root in your staging directory.  An easy way to accomplish this is to use the built-in Python webserver:
 
 ```shell
 cd ags_linux_installers
