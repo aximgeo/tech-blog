@@ -1,8 +1,8 @@
 # Introducing Slap: Simple Library for Automated Publishing
 
-We had a client recently who wanted to automate publication of some map services in ArcGIS (for) Server via a scheduled task; this is a very common need, and we've developed a tool to help manage publication.
+We often have clients who are looking to automate publication of services in ArcGIS for Server; because this is a very common need, we've developed a tool to help manage publication.
 
-For the purposes of this example, assume we have the following setup:
+For the purposes of this example, let's assume we have the following setup:
 
 * An ArcGIS for Server instance, `http://myhost.mydomain.com`
 * An admin user on the instance, with username `siteadmin`, password `arcgis`
@@ -13,9 +13,9 @@ For the purposes of this example, assume we have the following setup:
 Typically you'll run slap from your ArcGIS server; depending on how your system is set up, there are a couple of tasks that may need to be done first:
 
 * The local Python installation must be in the system `PATH` so that it can be run from a command prompt
-* The default Python package manager (pip) must be available
+* The default Python package manager (pip) must be available; if you're at 10.4 or above, this is already installed
 
-If you're not sure how to set these things up, see [Setting up a new Python environment with ArcGIS](link).  Once your Python environment is set up properly, installing slap is easy; just open a comand prompt and do:
+If you're not sure how to set these things up, there are a couple of good tutorials to [walk](https://pythongisandstuff.wordpress.com/2013/07/10/locating-python-adding-to-path-and-accessing-arcpy/) you [through](https://pip.pypa.io/en/stable/installing/#do-i-need-to-install-pip).  Once your Python environment is set up properly, installing slap is easy; just open a comand prompt and do:
 
 ```shell
 pip install slap
@@ -128,4 +128,6 @@ Deleting old service...
 C:\maps\map3.mxd published successfully
 ```
 
+## Applications
 
+Now that we can publish services from the command line, it's easy to leverage other existing tools for further automation; you can store the slap command in a batch fine and run it from a scheduled task, run it as part of a [vagrant](https://www.vagrantup.com/) or [chef](https://www.chef.io/chef/) script, or use it with tools like [Jenkins](https://jenkins.io/) to do continuous integration of your map services.  You can also import the slap modules directly, and use them in your own Python scripts.  Slap is open sourced under the MIT license, so you're free to use it in your own applications; you can check out the code, request features and report bugs on [github](https://github.com/gisinc/slap).
