@@ -130,6 +130,6 @@ C:\maps\map3.mxd published successfully
 
 ## Applications
 
-Once you can publish services from the command line, it's easy to leverage other existing tools for further automation; you can store the slap command in a batch fine and run it from a scheduled task, run it as part of a [vagrant](https://www.vagrantup.com/) or [chef](https://www.chef.io/chef/) script, or use it with tools like [Jenkins](https://jenkins.io/) to do continuous integration of your map services.  And when you're asked for help with publishing a set of services, it's liberating to be able to say "Step one: Close ArcMap." :)
+Once you can publish services from the command line, it's easy to leverage other existing tools for further automation; you can store the slap command in a batch file and run it from a scheduled task, run it as part of a [vagrant](https://www.vagrantup.com/) or [chef](https://www.chef.io/chef/) script, or use it with tools like [Jenkins](https://jenkins.io/) to do continuous integration of your map services.  And when you're asked for help with publishing a set of services, it's liberating to be able to say "Step one: Close ArcMap." :)
 
 Slap is open sourced under the MIT license, so you're free to use it on your own projects; you can check out the code, request features and report bugs on [github](https://github.com/gisinc/slap).
