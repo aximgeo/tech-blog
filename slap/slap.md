@@ -32,6 +32,8 @@ Installing collected packages: requests, slap
 Successfully installed requests-2.5.4.1 slap-3.0.0.dev5
 ```
 
+In case you're reading from the future, note that this guide is for slap version 3.x.  If something's not working, check the current [docs](https://github.com/gisinc/slap)!
+
 ## Configuration 
 Slap uses a configuration file to determine where and how to publish map services; this configuration file is in standard [json](https://www.copterlabs.com/json-what-it-is-how-it-works-how-to-use-it/) format, and can be generated using slap itself.  To create the bare-bones configuration file that `slap` will use to publish services, open your command prompt and do:
 
