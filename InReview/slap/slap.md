@@ -92,7 +92,7 @@ Once the config file is set up, you can publish the new services by doing:
 
 
 ```shell
-slap publish --username siteadmin --password argis
+slap publish --username siteadmin --password arcgis
 ```
 
 And you should see output like the following:
@@ -107,7 +107,7 @@ Publishing C:\maps\map3.mxd
 C:\maps\map3.mxd published successfully
 ```
 
-Navigating to our REST service endpoint, you should see:
+Now if you navigate to your REST service endpoint, you should see:
 
 ![slap1](slap1.png)
 
@@ -130,4 +130,4 @@ C:\maps\map3.mxd published successfully
 
 ## Applications
 
-Now that we can publish services from the command line, it's easy to leverage other existing tools for further automation; you can store the slap command in a batch fine and run it from a scheduled task, run it as part of a [vagrant](https://www.vagrantup.com/) or [chef](https://www.chef.io/chef/) script, or use it with tools like [Jenkins](https://jenkins.io/) to do continuous integration of your map services.  You can also import the slap modules directly, and use them in your own Python scripts.  Slap is open sourced under the MIT license, so you're free to use it in your own applications; you can check out the code, request features and report bugs on [github](https://github.com/gisinc/slap).
+Once you can publish services from the command line, it's easy to leverage other existing tools for further automation; you can store the slap command in a batch fine and run it from a scheduled task, run it as part of a [vagrant](https://www.vagrantup.com/) or [chef](https://www.chef.io/chef/) script, or use it with tools like [Jenkins](https://jenkins.io/) to do continuous integration of your map services.  You can also import the slap modules directly, and use them in your own Python scripts.  Slap is open sourced under the MIT license, so you're free to use it in your own applications; you can check out the code, request features and report bugs on [github](https://github.com/gisinc/slap).
