@@ -15,7 +15,7 @@ Typically you'll run slap from your ArcGIS server; depending on how your system 
 * The local Python installation must be in the system `PATH` so that it can be run from a command prompt
 * The default Python package manager (pip) must be available; if you're at 10.4 or above, this is already installed
 
-If you're not sure how to set these things up, there are a couple of good tutorials to [walk](https://pythongisandstuff.wordpress.com/2013/07/10/locating-python-adding-to-path-and-accessing-arcpy/) you [through](https://pip.pypa.io/en/stable/installing/#do-i-need-to-install-pip).  Once your Python environment is set up properly, installing slap is easy; just open a comand prompt and do:
+If you're not sure how to set these things up, there are a couple of good tutorials to [walk](https://pythongisandstuff.wordpress.com/2013/07/10/locating-python-adding-to-path-and-accessing-arcpy/) you [through](https://pip.pypa.io/en/stable/installing/#do-i-need-to-install-pip).  Once your Python environment is set up properly, installing slap is easy; just open a command prompt and do:
 
 ```shell
 pip install slap
