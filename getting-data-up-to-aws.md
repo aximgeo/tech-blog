@@ -1,0 +1,36 @@
+- FTP
+    - Old skool
+    - Requires ports to be opened on server
+    - Not secure
+    - Scriptable though with Python
+    - MB-scale tasks
+- S3
+    - Part of AWS ecosystem
+    - Highly secure
+    - Highly configurable
+    - Easily scriptable with Python
+        - mulitthreaded, so faster
+    - Does incur AWS costs, but they are very low for modest transfers
+    - MB- to GB-scale - log shipping, database backups, weekly GIS data updates
+- Import/Export
+    - Part of AWS ecosystem
+    - Cost- and time-effective
+    - You buy external HD, put your data on it, ship to AWS
+        - AWS puts data in a snapshot or S3 bucket
+    - Can be secure
+    - TB-scale
+    - Imagery libraries
+
+Other services Amazon has available (haven't used these):
+
+- Snowball
+    - TB- to PB-scale
+    - Secure AWS device they ship to you, you load your data, ship back to them
+        - encrypt your data
+    - Chain of custody?
+- Snowmobile
+    - PB- to EB-scale
+    - An actual 18 wheeler, 100 PB 45-foot long container
+    - Fastest way to move massive amounts of data across the country
+    - Imports data to S3 or Glacier
+    - Very new to AWS
