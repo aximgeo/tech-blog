@@ -1,5 +1,5 @@
-# GIS, Inc Tech Blog
-Staging area for GIS, Inc Blog Posts, for technical and content review.
+# GISinc Tech Blog
+Staging area for GISinc Blog Posts, for technical and content review.
 
 ## Guidelines
 Just a few things to keep in mind while writing; a good technical blog post:
@@ -30,6 +30,7 @@ By the end of the *week before* your target publish date:
 * If you like, create a new [project card](https://github.com/gisinc/tech-blog/projects/1) to track the article's progress; don't forget to add a label and assign it to yourself!
 * Once your article is complete, let others know that it is ready for review
 * Once your article has been reviewed, let marketing know that it is ready for publication
+  * E-mail [marketing@gisinc.com](mailto:marketing@gisinc.com) with the subject "Tech Blog for MM/DD/YY"
 
 ### Reviewing
 Once an article is marked as "In Review" by the author, we rely on peer review to help vet technical content and catch grammatical errors.  When reviewing an article,
@@ -41,8 +42,10 @@ Once an article is marked as "In Review" by the author, we rely on peer review t
 * For content suggestions, make a comment on the issue thread for the article
 * If you review an article and everything looks good, please make a note in the issue thread!
 
-## Format
+## Format and Style
 Plain text (i.e., markdown) is the easiest to work with, but don't let that be a blocker!  If you're more comfortable using a word doc or anything else, go for it.
+
+Use "GISinc", not "GIS, Inc" to refer to the company.
 
 ## Tips
 If you're interested in learning about development workflows, writing a post in markdown and using git is a great way to get started, as is reviewing and submitting a pull request with changes.  If you need help getting your post into the repo, just ask!
