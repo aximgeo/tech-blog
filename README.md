@@ -16,13 +16,30 @@ Just a few things to keep in mind while writing; a good technical blog post:
 ## Workflow
 Posts will be published every other Tuesday, and we'll schedule folks to write articles the month before.  The worflow will be something like:
 
-* Add your name and topic to the schedule
-* Double check with your supervisor
-* Write your post
+### Authors
+By the end of the *month before* your target publish date:
+
+* Sign up by adding your name and topic to the [schedule](https://gisinc.sharepoint.com/sites/techblog/_layouts/15/WopiFrame.aspx?sourcedoc=%7B0400897D-54DE-47E4-A253-F6A64DF244C0%7D&file=Topics%20and%20Schedule.xlsx&action=default&IsList=1&ListId=%7BFE5A177B-935B-421B-A744-33C3AA803889%7D&ListItemId=1)
+* Double check with your supervisor to get time allocated
+
+By the end of the *week before* your target publish date:
+
+* Write your article :)
 * Post it to github
-* Let others know it's ready for review
+* Create a new issue with the article title and the appropriate label ("In Progress" or "In Review")
+* If you like, create a new [project card](https://github.com/gisinc/tech-blog/projects/1) to track the article's progress; don't forget to add a label and assign it to yourself!
+* Once your article is complete, let others know that it is ready for review
+* Once your article has been reviewed, let marketing know that it is ready for publication
+
+### Reviewers
+
+Once an article is marked as "In Review" by the author, we rely on peer review to help vet technical content and catch grammatical errors.  When reviewing an article,
+
+* For grammatical changes, either make a comment on the issue thread for that article, or submit a pull request with corrections
+* For content suggestions, make a comment on the issue thread for the article
+* If you review an article and everything looks good, please make a note in the issue thread!
 
 ## Format
 Plain text (i.e., markdown) is the easiest to work with, but don't let that be a blocker!  If you're more comfortable using a word doc or anything else, go for it.
 
-If you're interested in learning about development workflows, writing a post in markdown and using git is a great way to get started.  If you need help getting your post into the repo, just ask.  
+If you're interested in learning about development workflows, writing a post in markdown and using git is a great way to get started, as is reviewing and submitting a pull request with changes.  If you need help getting your post into the repo, just ask!
