@@ -26,7 +26,7 @@ By the end of the *week before* your target publish date:
 
 * Write your article :)
 * Post it to github
-* Create a new issue with the article title and the appropriate label ("In Progress" or "In Review")
+* Create a new [issue](https://github.com/gisinc/tech-blog/issues) with the article title and the appropriate label ("In Progress" or "In Review").  *Please put a link to the actual article in the issue!*
 * If you like, create a new [project card](https://github.com/gisinc/tech-blog/projects/1) to track the article's progress; don't forget to add a label and assign it to yourself!
 * Once your article is complete, let others know that it is ready for review
 * Once your article has been reviewed, let marketing know that it is ready for publication
