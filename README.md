@@ -14,7 +14,7 @@ Just a few things to keep in mind while writing; a good technical blog post:
 * Is fun (funny) to read.
 
 ## Workflow
-Posts will be published every other Tuesday, and we'll schedule folks to write articles the month before.  The worflow will be something like:
+Posts will be published every other Tuesday, and we'll schedule folks to write articles the month before; the goal is to generate high-quality content on a regular basis.  This is intended to be an **informal process**, so if something isn't working for you, speak up!
 
 ### Authoring
 By the end of the *month before* your target publish date:
@@ -26,7 +26,7 @@ By the end of the *week before* your target publish date:
 
 * Write your article :)
 * Post it to github
-* Create a new [issue](https://github.com/gisinc/tech-blog/issues) with the article title and the appropriate label ("In Progress" or "In Review").  *Please put a link to the actual article in the issue!*
+* Create a new [issue](https://github.com/gisinc/tech-blog/issues) with the article title and the appropriate label ("In Progress" or "In Review").  **Please put a link to the actual article in the issue!**
 * If you like, create a new [project card](https://github.com/gisinc/tech-blog/projects/1) to track the article's progress; don't forget to add a label and assign it to yourself!
 * Once your article is complete, let others know that it is ready for review
 * Once your article has been reviewed, let marketing know that it is ready for publication
@@ -47,8 +47,4 @@ Plain text (i.e., markdown) is the easiest to work with, but don't let that be a
 ## Tips
 If you're interested in learning about development workflows, writing a post in markdown and using git is a great way to get started, as is reviewing and submitting a pull request with changes.  If you need help getting your post into the repo, just ask!
 
-Note that you can edit documents in your browser--this is especially useful for making minor corrections, but you can also use it to write a post if you prefer.
-
-![edit](readme/github-edit.png)
-
-![edit2](readme/github-edit2.png)
+Note that you can [edit](readme/github-edit.png) markdown documents directly in github--this is especially useful for making minor corrections, but you can also use it to write a post if you prefer.
