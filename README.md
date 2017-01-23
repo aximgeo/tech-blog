@@ -50,3 +50,5 @@ If you're interested in learning about development workflows, writing a post in 
 Note that you can edit documents in your browser--this is especially useful for making minor corrections, but you can also use it to write a post if you prefer.
 
 ![edit](readme/github-edit.png)
+
+![edit2](readem/github-edit2.png)
