@@ -51,4 +51,4 @@ Note that you can edit documents in your browser--this is especially useful for 
 
 ![edit](readme/github-edit.png)
 
-![edit2](readem/github-edit2.png)
+![edit2](readme/github-edit2.png)
