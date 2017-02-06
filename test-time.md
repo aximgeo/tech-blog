@@ -4,7 +4,7 @@ A question I get asked pretty frequently is,
 
 > How much time do you typically estimate for writing unit tests?
 
-Usually what people are looking for is something like, "I need X hours for production code, and Y hours for writing tests for this feature."  I think this is the wrong way to look at, but that can be difficult to explain.  I came a across a real example today that I think might be instructive.
+Usually what people are looking for is something like, "I need X hours for production code, and Y hours for writing tests for this feature."  I think this is the wrong way to look at it, but I've struggled with explaining why.  I came a across a real example today that I think might be instructive.
 
 We found a bug in some of our code that was using a list component; when removing an item from the list, the `value` argument passed to the event handler was null.  In addition, the POST body for the API call expected the properties to be defined even if they weren't set, and to have a default value of `-1`.
 
