@@ -14,7 +14,11 @@ The **production** code to fix the bug looked like this:
 
 ```javascript
 static getCategoryValue(val) {
-  return val == null ? -1 : (val.id == null ? -1 : val.id);
+    let category = -1;
+    if (val && val.id !== undefined && val.id !== null) {
+      category = val.id;
+    }
+    return category;
 }
 ```
 
