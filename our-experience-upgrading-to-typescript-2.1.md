@@ -38,7 +38,7 @@ the rest;
 npm install --save @types/react
 ```
 
-This will save type definition file for react to the `nodemodules/@types/react`
+This will save the type definition file for react to the `nodemodules/@types/react`
 directory and save the dependency in package.json.
 
 This capabilitiy eliminates the need for `tsd`, `typings`, and the `typings.json`
@@ -113,8 +113,8 @@ the toolchain for an improved development experience (i.e. intellisense).
 ## The Upgrade Process
 
 Okay, enough of why we chose to upgrade. Let's dive into the how. For each
-application or component we upgraded there were hree distinct parts; Upgrade
-TypeScript, Fix Compilation Errors, and Migrate Away from Typings.
+application or component we upgraded there were three distinct parts; Upgrading
+TypeScript, Fixing Compilation Errors, and Migrating Away from Typings.
 
 ### Upgrading TypeScript and Friends
 
@@ -232,7 +232,7 @@ export interface IDashboardItemProps {
 
 #### Type '"10"' is not assignable to type number
 
-In the following case we incporrectly used a string to represent a number.
+In the following case we incorrectly used a string to represent a number.
 
 ```jsx
 return (
@@ -283,7 +283,7 @@ organizaton on npm. We just had to find them! For that we used
 `npm view @types/<package-name>` to list all the type definitions available for
 the desired package.
 
-If we found type definition version matching the package version we installed it
+If we found a type definition version matching the package version we installed it
 with `npm install --save @types/<package-name>@version` and manually removed the
 same entry from the `typings.json` file.
 
@@ -295,7 +295,7 @@ what version we should use.
 
 In cases where the type definitions were not bundled with the package or
 published to npm the definition reference remained listed in `typings.json` and
-as such there was no action on our part. Fortunately, these cases limited to a
+as such there was no action on our part. Fortunately, these cases limited to
 custom dojo and rc-calender type definitions.
 
 With these three steps we were able to reduce our `typings.json` files from
