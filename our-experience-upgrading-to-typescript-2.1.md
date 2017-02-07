@@ -110,11 +110,11 @@ narrow type was possible, or preferred.
 The enhanced type checking is able to find more errors and provide more hints to
 the toolchain for an improved development experience (i.e. intellisense).
 
-## How
+## The Upgrade Process
 
-Okay, enough of the why we chose to upgrade. Let's dive into the how. We
-accomplished this in two distinct parts for each application or component we
-upgraded; Upgrading Typescript and Migrating to Scoped @types Packages.
+Okay, enough of why we chose to upgrade. Let's dive into the how. For each
+application or component we upgraded there were hree distinct parts; Upgrade
+TypeScript, Fix Compilation Errors, and Migrate Away from Typings.
 
 ### Upgrading TypeScript and Friends
 
@@ -139,9 +139,9 @@ This was a straight forward process.
    typings install
    ```
 
-   Note: Our package.json file defines `typings install` as a `postinstall`
+   *Note: Our package.json file defines `typings install` as a `postinstall`
    step so a separate `typings install` is not strictly necessary in our setup.
-   But I include it for clarity.
+   But I include it here for clarity.*
 
 1. Build the app
 
@@ -156,7 +156,7 @@ This was a straight forward process.
    analysis. Because this was the trickiest part to work through it deserves its
    own section.
 
-### Fix Compilation Errors
+### Fixing Compilation Errors
 
 Due soley to TypeScript's improved code analysis we found ourselves with a few
 dozen compilation errors across two applications and several custom components.
@@ -240,7 +240,7 @@ return (
 );
 ```
 
-TypeScript knew better and called us out on it. This fix was embarrassingly 
+TypeScript knew better and called us out on it. This fix was embarrassingly
 simple.
 
 ```jsx
@@ -255,7 +255,7 @@ dozens of compilation errors displayed was initially disheartening but
 resolution for the vast majority of errors was simply to be more explict about
 our types.
 
-### Using Scoped @types Packages
+### Migrating Away from Typings
 
   - port typings from typings.json to package.json
   - finding packages
