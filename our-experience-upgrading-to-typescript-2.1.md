@@ -16,8 +16,8 @@ dive into this topic too deeply. For us the standout reasons were...
 1. to catch errors at compile time rather than at runtime when possible
 1. to provide for improved tooling (e.g., intellisense, refactoring)
 
-For more reasons why you might want to use TypeScript see [Why TypeScript](1)
-and [Angular: Why TypeScript](2). Or search [TypeScript vs Javascript](3) for a
+For more reasons why you might want to use TypeScript see [Why TypeScript][1]
+and [Angular: Why TypeScript][2]. Or search [TypeScript vs Javascript][3] for a
 lot more content.
 
 ## Why TypeScript 2.1
@@ -31,7 +31,7 @@ the rest;
 
 ### Simpler Declaration File Acquisition
 
-[Simpler declaration file acquistion](4) was introduced in TypeScript 2.0. Since
+[Simpler declaration file acquistion][4] was introduced in TypeScript 2.0. Since
 2.0 all that is needed to obtain type declarations is npm.
 
 ```powershell
@@ -267,4 +267,3 @@ our types.
 [2]: https://vsavkin.com/writing-angular-2-in-typescript-1fa77c78d8e8#.yrgetx4n1
 [3]: http://lmgtfy.com/?q=typescript+vs+javascript
 [4]: https://github.com/Microsoft/TypeScript/issues/9184
-[5]: https://github.com/Microsoft/TypeScript/wiki/What's-new-in-TypeScript#control-flow-based-type-analysis
