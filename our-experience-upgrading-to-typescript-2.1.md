@@ -251,17 +251,66 @@ return (
 
 These three types of errors made up the vast majority of the issues we
 encountered upgrading from TypeScript 1.8 to TypeScript 2.1. Seeing several
-dozens of compilation errors displayed was initially disheartening but
+dozens of compilation errors displayed was initially disheartening but the
 resolution for the vast majority of errors was simply to be more explict about
 our types.
 
 ### Migrating Away from Typings
 
-  - port typings from typings.json to package.json
-  - finding packages
-    - built in (immutable)/ how to find
-    - npm view or http://microsoft.github.io/TypeSearch/ (found during the making of this blog)
-  -
+The final step in our upgrade process was to elimnate (or at least minimize)
+the use of `typings` and `typings.json` by adopting the use of npm to bring in
+the required type definitions.
+
+For each type definition in `typings.json` the process depended on where the
+type definitions were. There were three locations we found for type definitions;
+included with the package, published to the @types organization on npm, and
+remaining in the DefinitelyTyped repository on Github.
+
+#### Included with the Package
+
+Some packages such as Immutable.js bundle their type definitions with the
+package. In these cases you do not need to include the type definition
+dependency in `typings.json` or `package.json`.
+
+To check if the package ships with type definitions inspect the package's
+`package.json` file. If it contains a `"types"` or `"typings"` property
+referencing a type definition file it ships with type definitions.
+
+#### Published to @types Organization on npm
+
+Most of the type definitions we used were found to be published to the @types
+organizaton on npm. We just had to find them! For that we used
+`npm view @types/<package-name>` to list all the type definitions available for
+the desired package.
+
+If we found type definition version matching the package version we installed it
+with `npm install --save @types/<package-name>@version` and manually removed the
+same entry from the `typings.json` file.
+
+If we could not find a matching version we would either install the latest
+version and try it (this often worked) or scour their github page for info on
+what version we should use.
+
+#### DefinitelyTyped Repository on Github
+
+In cases where the type definitions were not bundled with the package or
+published to npm the definition reference remained listed in `typings.json` and
+as such there was no action on our part. Fortunately, these cases limited to a
+custom dojo and rc-calender type definitions.
+
+With these three steps we were able to reduce our `typings.json` files from
+a max of 38 lines to a meager 8. For some components we were able to eliminate
+the `typings.json` and `typings` tool dependency altogether!
+
+# In Summary
+
+Between the simpler declaration acquistion, support for spread and rest, and an
+improved type system that catches more errors at compile time TypeScript 2.1 is
+a marked improvement over TypeScript 1.8. Our team of several developers was
+able to upgrade a dozen or so components and applications over the course of
+about two days without too many hiccups.
+
+Next stop, React 15?
 
 [1]: https://basarat.gitbooks.io/typescript/content/docs/why-typescript.html
 [2]: https://vsavkin.com/writing-angular-2-in-typescript-1fa77c78d8e8#.yrgetx4n1
