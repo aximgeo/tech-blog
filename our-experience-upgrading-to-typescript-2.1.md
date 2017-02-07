@@ -34,7 +34,7 @@ the rest;
 [Simpler declaration file acquistion][4] was introduced in TypeScript 2.0. Since
 2.0 all that is needed to obtain type declarations is npm.
 
-```powershell
+```shell
 npm install --save @types/react
 ```
 
@@ -123,31 +123,33 @@ This was a straight forward process.
 1. In package.json upgrade `ts-loader`, `tslint`, `typescript`, and `typings` to
    the latest available stable versions.
 
-   ```json
-   "ts-loader": "~1.3.3",
-   "tslint": "~4.3.1",
-   "typescript": "2.1.5",
-   "typings": "~2.1.0",
-   ```
+    ```javascript
+    {
+    "ts-loader": "~1.3.3",
+    "tslint": "~4.3.1",
+    "typescript": "2.1.5",
+    "typings": "~2.1.0"
+    }
+    ```
 
 1. Perform a fresh `npm install` and `typings install`
 
-   ```powershell
-   rm node-modules -force -recurse
-   rm typings -force -recurse
-   npm install
-   typings install
-   ```
+    ```shell
+    rm node-modules -force -recurse
+    rm typings -force -recurse
+    npm install
+    typings install
+    ```
 
-   *Note: Our package.json file defines `typings install` as a `postinstall`
-   step so a separate `typings install` is not strictly necessary in our setup.
-   But I include it here for clarity.*
+    *Note: Our package.json file defines `typings install` as a `postinstall`
+    step so a separate `typings install` is not strictly necessary in our setup.
+    But I include it here for clarity.*
 
 1. Build the app
 
-   ```powershell
-   npm run build
-   ```
+    ```shell
+    npm run build
+    ```
 
 1. Admire your ~~finished work~~ compilation errors
 
@@ -162,7 +164,7 @@ Due soley to TypeScript's improved code analysis we found ourselves with a few
 dozen compilation errors across two applications and several custom components.
 Fortunately, all of the errors took on a form similar to:
 
-> Type "something" is not assignable to type "something else"
+`Type "something" is not assignable to type "something else"`
 
 Here are a few of the more common cases we ran across.
 
