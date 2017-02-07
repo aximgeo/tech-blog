@@ -302,7 +302,7 @@ With these three steps we were able to reduce our `typings.json` files from
 a max of 38 lines to a meager 8. For some components we were able to eliminate
 the `typings.json` and `typings` tool dependency altogether!
 
-# In Summary
+## In Summary
 
 Between the simpler declaration acquistion, support for spread and rest, and an
 improved type system that catches more errors at compile time TypeScript 2.1 is
