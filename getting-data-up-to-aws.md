@@ -80,7 +80,7 @@ an AWS EC2 instance.
 
 An alternative to using FTP to push data directly 
 to/from your AWS Windows server is to use Amazon 
-Simple Storage Service (S3) object storage as a 
+Simple Storage Service ([S3](https://aws.amazon.com/s3/)) object storage as a 
 interim storage medium. With this method you upload 
 data to S3, then download the data to your EC2 
 instance. S3 supports data transfer over SSL and 
@@ -179,7 +179,7 @@ massive amounts of data to or from AWS.
 
 ### Snowmobile
 
-In 2016, AWS introduced AWS Snowmobile, an 
+In 2016, AWS introduced AWS [Snowmobile](https://aws.amazon.com/snowmobile/), an 
 exabyte-scale data transfer service that is 
 literally a 45-foot long 100PB capable 
 ruggedized shipping container pulled by a 
