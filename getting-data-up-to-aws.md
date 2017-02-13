@@ -70,7 +70,7 @@ Windows server. Costs for FTP are based on your
 storage needs on your EC2 instance of the data 
 you are uploading. Data tranfer in to Amazon EC2 
 from the Internet is free. These factors make 
-FTP a simple and effective option if you need 
+FTP a straightforward and effective option if you need 
 to only routinely automate data tranfer to/from 
 an AWS EC2 instance.
 
@@ -88,11 +88,11 @@ automatically encrypts your data once it is uploaded.
 Here at GISinc, we love Python, and 
 [Boto](https://boto3.readthedocs.io/en/stable/index.html) 
 is the defacto AWS SDK for Python. Boto makes it 
-incredibly easy and simple to interact with Amazon 
-services like S3. Uploading a file to S3 is as 
-simple as creating a connection to your S3 bucket, 
-getting a reference to your local file, and 
-uploading it.
+easy to use Python to interact with Amazon 
+services like S3. Uploading a file to S3 can be accomplished 
+in just a few lines of code. First, create a connection 
+to your S3 bucket. Next, get a reference to your local file, and 
+finally, upload it.
 
 ```python
 import boto3
@@ -104,7 +104,9 @@ obj = bucket.Object(r"C:\temp\my-file.txt")
 obj.upload_file(object)
 ```
 
-Downloading from an S3 bucket is equally simple.
+Downloading from an S3 bucket is similar to uploading, just with 
+a different method call to - you guessed it - to download 
+the file.
 
 ```python
 import boto3
@@ -132,7 +134,7 @@ your AWS EC2 instance.
 
 ## AWS large-scale data transfer methods
 
-We have demonstrated that both FTP and S3 transfer 
+We have demonstrated that both FTP and S3  
 will work nicely for MB- to GB-scale transfers, 
 but what do you do when you need to transfer 
 data on the order of terabytes?
