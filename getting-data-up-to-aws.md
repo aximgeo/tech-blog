@@ -107,6 +107,8 @@ obj.upload_file(object)
 Downloading from an S3 bucket is equally simple.
 
 ```python
+import boto3
+
 s3 = boto3.resource("s3")
 bucket = s3.Bucket(bucket_name)
 # S3 file to download
