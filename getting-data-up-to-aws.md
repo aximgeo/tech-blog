@@ -62,7 +62,7 @@ some level of security. Here, using CIDR notation,
 we have specified a range of IP addresses that 
 can access port 21:
 
-![aws1](aws\port-ip-restrictions.png)
+![aws1](aws/port-ip-restrictions.png)
 
 One of the key upsides to using FTP is that you 
 are able to put/get files directly to/from your 
