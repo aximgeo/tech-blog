@@ -134,7 +134,7 @@ your AWS EC2 instance.
 
 ## AWS large-scale data transfer methods
 
-We have demonstrated that both FTP and S3  
+We have demonstrated that both FTP and S3 
 will work nicely for MB- to GB-scale transfers, 
 but what do you do when you need to transfer 
 data on the order of terabytes?
@@ -183,7 +183,7 @@ massive amounts of data to or from AWS.
 
 ### Snowmobile
 
-In 2016, AWS introduced AWS [Snowmobile](https://aws.amazon.com/snowmobile/), an 
+In 2016, AWS introduced [AWS Snowmobile](https://aws.amazon.com/snowmobile/), an 
 exabyte-scale data transfer service that is 
 literally a 45-foot long 100PB capable 
 ruggedized shipping container pulled by a 
