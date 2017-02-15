@@ -45,6 +45,8 @@ Plain text (i.e., markdown) is the easiest to work with, but don't let that be a
 
 Use "GISinc", not "GIS, Inc" to refer to the company.
 
+Please do not use line breaks within your paragraphs. Rather, let your text wrap and the output post will automatically handle your paragraphs properly.
+
 ## Tips
 If you're interested in learning about development workflows, writing a post in markdown and using git is a great way to get started, as is reviewing and submitting a pull request with changes.  If you need help getting your post into the repo, just ask!
 
