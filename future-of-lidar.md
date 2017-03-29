@@ -4,4 +4,4 @@ When dealing with these datasets and determining which to use, you must think of
 
 With recent releases, such as the solid state LeddarTech Vu8 sensor, I would not be surprised if Lidar makes its way into photographs. The Lidar units are becoming smaller and smaller and more easier to use. Lidar will not substitute the flash, but may work in the same fashion to measure the depth of the sensors surroundings. An extra band added to an RGB image would be a good way to store the elevation information. With all the advances in photogrammetry and drone technologies, we will find the right applications for Lidar. The competing forces between Lidar and photogrammetry can only be good for one another.
 
-Here is an example of a photgrammetric point cloud created with pictures taken from a drone: http://54.152.25.201:8080/potree/galisteo.html.  
+<a href="http://54.152.25.201:8080/potree/galisteo.html">Here is an example of a photgrammetric point cloud created with pictures taken from a drone: http://54.152.25.201:8080/potree/galisteo.html.  
