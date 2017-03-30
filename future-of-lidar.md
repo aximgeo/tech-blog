@@ -1,4 +1,4 @@
-Is Lidar a dying technology? Not necessarily. It’s evolving and our industry industry needs to find the right applications for the technology to optimize its current uses.
+Is Lidar a dying technology? Not necessarily. It’s evolving and our industry needs to find the right applications for the technology to optimize its current uses.
 
 Is it the best way to acquire elevation data? Not this point in time. I would argue photogrammetry is the easiest and most cost efficient way of creating elevation data sets. The word “phodar” (or “fodar”), an industry acronym for photogrammetry detection and ranging, has been popping up across the surveying and mapping field. However, this is a misrepresentation of what detection and ranging means in practice. The sensor used for photogrammetry is a camera and does not operate with regard to detection and ranging, unlike with Lidar or Radar technology. So why do people use these terms incorrectly? At a glance, Lidar and photogrammetry point clouds look the same, and not to mention Lidar sounds similar. So, it is easy to see how some might confuse the two ideas.
 
