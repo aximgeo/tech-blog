@@ -27,7 +27,7 @@ link.close()
 
 Although standard FTP is not secure, with AWS, you can restrict port access to only a certain IP address or a range of IPs, thus providing some level of security. Here, using CIDR notation, we have specified a range of IP addresses that can access port 21:
 
-![aws1](aws/port-ip-restrictions.png)
+![aws1](port-ip-restrictions.png)
 
 One of the key upsides to using FTP is that you are able to put/get files directly to/from your Windows server. Costs for FTP are based on your storage needs on your EC2 instance of the data you are uploading. Data tranfer in to Amazon EC2 from the Internet is free. These factors make FTP a straightforward and effective option if you need 
 to only routinely automate data tranfer to/from an AWS EC2 instance.

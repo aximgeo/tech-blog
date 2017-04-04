@@ -50,4 +50,4 @@ Please do not use line breaks within your paragraphs. Rather, let your text wrap
 ## Tips
 If you're interested in learning about development workflows, writing a post in markdown and using git is a great way to get started, as is reviewing and submitting a pull request with changes.  If you need help getting your post into the repo, just ask!
 
-Note that you can [edit](readme/github-edit.png) markdown documents directly in github--this is especially useful for making minor corrections, but you can also use it to write a post if you prefer.
+Note that you can [edit](github-edit.png) markdown documents directly in github--this is especially useful for making minor corrections, but you can also use it to write a post if you prefer.
