@@ -1,10 +1,10 @@
 # Getting ESRI's Default Vector Basemaps into the Basemap Gallery Widget
 
-Whether you agree with putting a basemap gallery widget into your web mapping application or not, it is one of the most common tasks web developers are asked to perform. At some point in developing spatial web applications you will likely be asked to do this. Fortunately, many APIs come with some type of widget and make this task fairly trivial. The ESRI JavaScript API has had a basemap gallery [widget](https://developers.arcgis.com/javascript/3/jsapi/basemapgallery-amd.html) since the early days but new vector basemaps have increased it's relevance as of late. As such, our applications had a requirement to take all of the latest default basemaps within the JSAPI and put them into the gallery.
+Whether you agree with putting a basemap gallery widget into your web mapping application or not, it is one of the most common tasks web developers are asked to perform. At some point in developing spatial web applications you will likely be asked to do this. Fortunately, many APIs come with some type of widget and make this task fairly trivial. The ESRI JavaScript API has had a basemap gallery [widget](https://developers.arcgis.com/javascript/3/jsapi/basemapgallery-amd.html) since the early days but new vector basemaps have increased it's relevance as of late. As such, our applications had a requirement to take all of the latest default basemaps within the JSAPI (which include some vector basemaps) and put them into the gallery.
 
 Vector tile layers have been around for a while but are [relatively new](https://developers.arcgis.com/javascript/3/jshelp/new_v315.html) in the ESRI JSAPI. Moreover, ESRI now provides a number of vector basemaps available from [ArcGIS Online](http://www.arcgis.com/home/group.html?id=30de8da907d240a0bccd5ad3ff25ef4a) for free that can be added to your application. ESRI makes it very easy to add custom basemaps to an application using either the default [basemaps](https://developers.arcgis.com/javascript/3/jsapi/esri.basemaps-amd.html) collection or the gallery widget itself. However, depending on where you want to put the basemap, the code is a bit different. 
 
-To add a basemap to the default collection, simply create a new basemap object with it's collection of basemap layers and add it.
+To add a vector tile basemap to the default collection, simply create a new basemap object with it's collection of basemap layers and add it. Required properties for each basemap layer object include `url` and `type`.
 
 ```javascript
 require([
@@ -28,7 +28,7 @@ require([
     });
 });
 ```
-To add a basemap to the gallery widget, create a new [Basemap](https://developers.arcgis.com/javascript/3/jsapi/basemap-amd.html) object with it's collection of [BasemapLayers](https://developers.arcgis.com/javascript/3/jsapi/basemaplayer-amd.html) and add it to the gallery's constructor.
+To add a vector tile basemap to the gallery widget, create a new [Basemap](https://developers.arcgis.com/javascript/3/jsapi/basemap-amd.html) object with it's collection of [BasemapLayers](https://developers.arcgis.com/javascript/3/jsapi/basemaplayer-amd.html) and add it to the gallery's constructor. Required properties for each basemap layer object include `styleUrl` and `type`.
 
 ```javascript
 require([
