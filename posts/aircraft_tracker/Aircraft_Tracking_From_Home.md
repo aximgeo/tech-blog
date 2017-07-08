@@ -4,13 +4,13 @@ In order to get started with this project we need to take a quick sidetrip on th
 
 ![Hardware setup to make this all work](./hardware_sm.jpg)
 
-Now that we know what technology is used to make this application run, here is a quick list of the hardware needed to be acquired.   All can be purchased for around $75 from online sites, so I will leave it up to you to decide where to buy it from.
+Now that we know what technology is used to make this application run, here is a quick list of the hardware needed to be acquired.   All can be purchased for around $75 from online sites, so I will leave it up to you to decide where to buy it.
 
 1. Raspberry Pi:  Recommend version 3 as it has built in wifi, but version 2 will also work
 2. RTL-SDR:  Any of the RTL-SDR DVB-T usb sticks will work
 3. Micro SD Card:  8GB or larger
 
-With the hardware in hand, it is a pretty straight forward process to get everything setup.  The first thing you will need to decide is how indepth do you want to go with building your system.   For this activity, I'm going to recommend we take the easiest route that gets us up and running in the shortest amount of time.   For those so inclined to going down rough road, I recommend reading about all the possibilities on the [RTL-SDR ADS-B page](http://www.rtl-sdr.com/adsb-aircraft-radar-with-rtl-sdr/).   
+With the hardware in hand, it is a pretty straight forward process to get everything setup.  The first thing you will need to decide is how indepth you want to go with building your system.   For this activity, I'm going to recommend we take the easiest route that gets us up and running in the shortest amount of time.   For those so inclined to going down rough road, I recommend reading about all the possibilities on the [RTL-SDR ADS-B page](http://www.rtl-sdr.com/adsb-aircraft-radar-with-rtl-sdr/).   
 
 To get the software installed and running on our RasPi, [FlightAware](http://flightaware.com) has gone ahead and done all the heavy lifting and created an image file that contains the operating system and software needed to run the aircraft tracking application.  They've done this to make it easy to increase the coverage of receivers listening to aircraft, with the understanding that what your station is picking up is resent to their service.  If you are uncomfortable with sending data from your home up to FlightAware, I recommend taking a look at the RTL-SDR ADS-B page references above to getting the software installed and running.  While the end results are the same, you just have to put a little more effort into it.   Here is a quick breakdown of the steps to take, with detailed information found on the [FlightAware build page](http://flightaware.com/adsb/piaware/build)
 
@@ -22,4 +22,4 @@ Once it has started up, you can view the signals being received by the device by
 
 ![FlightAware Web Application](./dump1090-fa_sm.jpg)
 
-Now that we have a cheap and simple device capturing the aircraft flying overhead, be sure to check out my next post where I will outline the processes for pulling this real time data into a profession GIS.   To be continued.......
+Now that we have a cheap and simple device capturing the aircraft flying overhead, be sure to check out my next post where I will outline the processes for pulling this real time data into a professional GIS.   To be continued.......
